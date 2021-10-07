@@ -164,7 +164,10 @@ namespace Frogger
 
             if (ok == false)
             {
-                gameLoop.Enabled = false;              
+                gameLoop.Enabled = false;
+                outputLabel.Text = "You lose!";
+                Refresh();
+                Thread.Sleep(500);
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
                 f.Controls.Add(mm);
@@ -173,6 +176,9 @@ namespace Frogger
             if (frogRec.IntersectsWith(finishRec))
             {
                 gameLoop.Enabled = false;
+                outputLabel.Text = "You win!";
+                Refresh();
+                Thread.Sleep(500);
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
                 f.Controls.Add(mm);
