@@ -19,8 +19,8 @@ namespace Frogger
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MainScreen ms = new MainScreen();
-            this.Controls.Add(ms);
+            MainMenu mm = new MainMenu();
+            this.Controls.Add(mm);
         }
     }
 }

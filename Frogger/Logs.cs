@@ -9,26 +9,36 @@ namespace Frogger
 {
     class Logs
     {
-        public int x, y, size, speed;
+        public int x, y, width, height, speed;
         public SolidBrush brushColor;
 
-        public Logs(int _x, int _y, int _size, int _speed, SolidBrush _brushColor)
+        public Logs(int _x, int _y, int _width, int _height, int _speed, SolidBrush _brushColor)
         {
             x = _x;
             y = _y;
-            size = _size;
+            width = _width;
+            height = _height;
             speed = _speed;
             brushColor = _brushColor;
+
         }
         public void Move()
         {
-            y += speed;
+            x -= speed;
         }
         public void Move(string direction)
         {
-            y += speed;
+            if (direction == "up")
+            {
+                y -= speed;
+
+            }
+            else if (direction == "down")
+            {
+                y += speed;
+            }
 
         }
-        
+
     }
 }
