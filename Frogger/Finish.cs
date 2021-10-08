@@ -11,6 +11,8 @@ namespace Frogger
     {
         public int x, y, width, height;
         public SolidBrush brushColor;
+
+        //Finish line info
         public Finish(int _x, int _y, int _width, int _height, SolidBrush _brushColor)
         {
             x = _x;

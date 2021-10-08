@@ -12,6 +12,7 @@ namespace Frogger
         public int x, y, width, height, speed;
         public SolidBrush brushColor;
 
+        //Log info
         public Logs(int _x, int _y, int _width, int _height, int _speed, SolidBrush _brushColor)
         {
             x = _x;
@@ -22,6 +23,7 @@ namespace Frogger
             brushColor = _brushColor;
 
         }
+        //Move behaviour
         public void Move()
         {
             x -= speed;

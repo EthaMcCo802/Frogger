@@ -17,8 +17,10 @@ namespace Frogger
         public MainMenu()
         {
             InitializeComponent();
+            Cursor.Hide();
         }
 
+        //Loads the main screen when play button is pressed
         private void playButton_Click(object sender, EventArgs e)
         {
             MainScreen ms = new MainScreen();
@@ -27,16 +29,17 @@ namespace Frogger
             f.Controls.Add(ms);
         }
 
+        //Quits the game
         private void quitButton_Click(object sender, EventArgs e)
         {
             Form f = this.FindForm();
             f.Close();
         }
 
+        //Plays menu music
         private void MainMenu_Load(object sender, EventArgs e)
         {
             menu.Play();
-            Cursor.Hide();
         }
     }
 }

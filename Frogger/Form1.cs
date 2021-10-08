@@ -17,6 +17,7 @@ namespace Frogger
             InitializeComponent();
         }
 
+        //Loads the menu screen
         private void Form1_Load(object sender, EventArgs e)
         {
             MainMenu mm = new MainMenu();
